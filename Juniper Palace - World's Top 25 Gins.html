@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juniper Palace - The World's Top 25 Premium Gins</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .gin-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            transition: transform 0.3s ease;
+        }
+
+        .gin-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .botanicals-tag {
+            background-color: #f0f7ee;
+            border-radius: 15px;
+            padding: 4px 12px;
+            margin: 4px;
+            display: inline-block;
+            font-size: 0.85rem;
+            color: #2c5e2e;
+        }
+
+        .buy-now-btn {
+            background-color: #2c5e2e;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .buy-now-btn:hover {
+            background-color: #1e401f;
+            transform: scale(1.05);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c5e2e 0%, #3a7d3a 100%);
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .section-title {
+            color: #2c5e2e;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: #2c5e2e;
+        }
+
+        .gin-image {
+            width: 250px;
+            height: 300px;
+            object-fit: contain;
+            background-color: #f8f8f8;
+        }
+
+        @media (max-width: 768px) {
+            .gin-card {
+                flex-direction: column;
+            }
+
+            .gin-image {
+                width: 100%;
+                height: 250px;
+            }
+        }
+
+        .nav-item {
+            display: inline-block;
+            padding: 8px 16px;
+            margin: 0 4px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            color: #2c5e2e;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover {
+            background-color: #e8f5e9;
+            transform: translateY(-2px);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container mx-auto text-center py-12">
+            <h1 class="text-4xl font-bold mb-4">The World's Finest Gins</h1>
+            <p class="text-xl">Discover our curated selection of the top 25 premium gins from across the globe</p>
+        </div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="container mx-auto mt-10 px-4">
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <p class="text-lg leading-relaxed mb-6">
+                Welcome to Juniper Palace's exclusive collection of the world's most exceptional gins. Each bottle in
+                our selection has been carefully chosen for its outstanding quality, unique flavor profile, and
+                remarkable craftsmanship. From traditional London Dry styles to innovative botanical blends, these
+                premium spirits represent the pinnacle of gin distillation.
+            </p>
+            <p class="text-lg leading-relaxed">
+                Whether you're a seasoned gin connoisseur or just beginning your journey into the world of fine
+                spirits, our comprehensive guide will help you discover your next favorite bottle. Learn about the
+                intricate distillation processes, explore the unique botanical profiles, and find the perfect gin to
+                elevate your cocktail experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="container mx-auto mt-10 px-4">
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-2xl font-bold mb-6 text-center">Quick Navigation</h2>
+            <div class="flex flex-wrap justify-center gap-2">
+                <a href="#monkey47" class="nav-item">Monkey 47</a>
+                <a href="#hendricks" class="nav-item">Hendrick's</a>
+                <a href="#botanist" class="nav-item">The Botanist</a>
+                <a href="#tanqueray" class="nav-item">Tanqueray</a>
+                <a href="#aviation" class="nav-item">Aviation</a>
+                <a href="#empress" class="nav-item">Empress 1908</a>
+                <a href="#roku" class="nav-item">Roku</a>
+                <a href="#bombay" class="nav-item">Bombay Sapphire</a>
+                <a href="#sipsmith" class="nav-item">Sipsmith</a>
+                <a href="#beefeater" class="nav-item">Beefeater</a>
+                <a href="#citadelle" class="nav-item">Citadelle</a>
+                <a href="#drumshanbo" class="nav-item">Drumshanbo</a>
+                <a href="#ginmare" class="nav-item">Gin Mare</a>
+                <a href="#plymouth" class="nav-item">Plymouth</a>
+                <a href="#nolets" class="nav-item">Nolet's Silver</a>
+                <a href="#kinobi" class="nav-item">Ki No Bi</a>
+                <a href="#scapegrace" class="nav-item">Scapegrace</a>
+                <a href="#junipero" class="nav-item">Junipero</a>
+                <a href="#fords" class="nav-item">Ford's</a>
+                <a href="#stgeorge" class="nav-item">St. George Terroir</a>
+                <a href="#martin" class="nav-item">Martin Miller's</a>
+                <a href="#nikka" class="nav-item">Nikka Coffey</a>
+                <a href="#fourpillars" class="nav-item">Four Pillars</a>
+                <a href="#silentpool" class="nav-item">Silent Pool</a>
+                <a href="#oxley" class="nav-item">Oxley</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Individual Gin Sections -->
+    <section class="container mx-auto mt-10 px-4">
+        <!-- Monkey 47 -->
+        <div id="monkey47" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <img src="Juniper Palace - World's Top 25 Gins_files/Monkey 47.jpg" alt="Monkey 47 Gin" class="gin-image">
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">1. Monkey 47</h2>
+                <p class="text-gray-600 mb-2">Schwarzwald Dry Gin | 47% ABV</p>
+                <p class="italic text-gray-500 mb-4">Black Forest, Germany</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Monkey 47 delivers an extraordinary complexity with a distinctly woody, earthy profile
+                    balanced by bright citrus and floral notes. The initial taste overwhelms with spice, moving
+                    to citrus in the middle, and finishing with earthy sweetness. Its nose offers an intricate
+                    blend of lavender, chamomile, lemon verbena, cardamom, and mint, with deeper layers
+                    of ginger and lemongrass.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (47 in total, including):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Lingonberries</span>
+                    <span class="botanicals-tag">Lavender</span>
+                    <span class="botanicals-tag">Chamomile</span>
+                    <span class="botanicals-tag">Spruce Shoots</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Lemon Verbena</span>
+                    <span class="botanicals-tag">Ginger</span>
+                    <span class="botanicals-tag">Lemongrass</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Crafted at the Black Forest Distillery by master distiller Christoph Keller, Monkey 47 is made
+                    using a traditional method with a molasses-based spirit. The 47 botanicals, many foraged
+                    from the Black Forest, are macerated in the base spirit before being distilled in small
+                    batches through traditional copper pot stills. The gin is then matured in earthenware
+                    containers for three months before being brought to bottle strength with local spring
+                    water.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Hendrick's -->
+        <div id="hendricks" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+			<div class="gin-image flex items-center justify-center">
+                <img src="Juniper Palace - World's Top 25 Gins_files/Hendricks.jpg" alt="Hendricks Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">2. Hendrick's</h2>
+                <p class="text-gray-600 mb-2">Scottish Gin | 41.4% ABV</p>
+                <p class="italic text-gray-500 mb-4">Girvan, Scotland</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Hendrick's is renowned for its distinctively floral aroma with a clean, crisp taste that
+                    balances traditional gin notes with unique infusions. The flavor is smooth with a light
+                    sweetness, featuring prominent cucumber and rose petal notes that create a refreshing,
+                    delicate character. The finish is medium-length, featuring lingering floral notes and a
+                    subtle hint of citrus.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Bulgarian Rose</span>
+                    <span class="botanicals-tag">Cucumber</span>
+                    <span class="botanicals-tag">Coriander Seeds</span>
+                    <span class="botanicals-tag">Elderflower</span>
+                    <span class="botanicals-tag">Chamomile</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Caraway Seeds</span>
+                    <span class="botanicals-tag">Cubeb Berries</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    What sets Hendrick's apart is its unique distillation method, employing two distinct stills:
+                    the Bennett still (which produces a more oily, full-bodied spirit) and the Carter-Head still
+                    (which yields a lighter, more floral spirit). After distillation, the gin is infused with Bulgarian
+                    rose petals and cucumber to create its signature flavor. This marriage of different
+                    distillation methods and post-distillation infusions creates Hendrick's distinctive
+                    character, overseen by Master Distiller Lesley Gracie.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- The Botanist -->
+        <div id="botanist" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/TheBotanist.jpg" alt="The Botanist Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">3. The Botanist</h2>
+                <p class="text-gray-600 mb-2">Islay Dry Gin | 46% ABV</p>
+                <p class="italic text-gray-500 mb-4">Islay, Scotland</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    The Botanist offers a complex yet balanced flavor with remarkable depth. Cinnamon, coriander, and juniper provide a platform for the delicate, aromatic Islay botanicals to reveal their astonishing depth and clarity. The palate unfolds with fresh herbal notes, citrus freshness, and subtle spice, creating a versatile and distinctive gin experience.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (31 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Apple Mint</span>
+                    <span class="botanicals-tag">Birch</span>
+                    <span class="botanicals-tag">Bog Myrtle</span>
+                    <span class="botanicals-tag">Cassia</span>
+                    <span class="botanicals-tag">Chamomile</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Elderflower</span>
+                    <span class="botanicals-tag">Gorse Flowers</span>
+                    <span class="botanicals-tag">Heather</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Produced at the Bruichladdich Distillery on the Scottish island of Islay, The Botanist combines nine traditional gin botanicals with 22 hand-foraged local herbs and flowers. These botanicals are harvested by the distillery's professional forager from the hills, shores, and bogs of the island. The slow, artisanal distillation takes place in a unique Lomond still nicknamed "Ugly Betty," allowing for a gentle extraction of the delicate flavors and essential oils from the botanicals.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Tanqueray -->
+        <div id="tanqueray" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Tanqueray.jpg" alt="Tanqueray Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">4. Tanqueray</h2>
+                <p class="text-gray-600 mb-2">London Dry Gin | 47.3% ABV</p>
+                <p class="italic text-gray-500 mb-4">Cameronbridge, Scotland</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Tanqueray London Dry Gin offers a perfectly balanced, crisp flavor with distinct juniper character complemented by fresh citrus notes. The palate begins with juniper but finishes with rich hints of baking spice including angelica root, cinnamon, and coriander seed. Its clean, precise taste makes it an ideal foundation for classic cocktails.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Licorice</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Tanqueray's production process has remained largely unchanged since Charles Tanqueray first perfected his recipe in 1830. The gin is distilled four times in traditional copper pot stills, including the famous "Old Tom" still that survived the London Blitz of WWII. The botanicals are steeped directly in the neutral spirit before distillation, allowing for a thorough extraction of flavors. This time-honored process ensures consistency in Tanqueray's distinctive character, which has been recognized as the world's best gin in numerous competitions.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Aviation -->
+        <div id="aviation" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                   <img src="Juniper Palace - World's Top 25 Gins_files/Aviation.jpg" alt="Aviation Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">5. Aviation</h2>
+                <p class="text-gray-600 mb-2">American Gin | 42% ABV</p>
+                <p class="italic text-gray-500 mb-4">Portland, Oregon, USA</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Aviation offers a balanced, medley of botanicals with subtle juniper giving way to layers of complex flavor. The midbody provides a huge burst of juniper followed by an earthy, cedar-like flavor, while the tail end is floral and mentholated. Notes suggestive of root beer lead into hints of cinnamon, cassia, and cardamom, finishing with floral and earthy spice notes.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">French Lavender</span>
+                    <span class="botanicals-tag">Anise Seed</span>
+                    <span class="botanicals-tag">Sarsaparilla</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Aviation Gin is batch-distilled using a unique maceration process that creates its smooth, full-bodied flavor. The botanicals are steeped in grain spirit for 48 hours before distillation in a custom-built pot still. Unlike traditional London Dry gins, Aviation focuses on a balanced blend of botanicals rather than leading with juniper, creating what's known as an "American Dry Gin." This innovative approach has helped define the New Western style of gin that showcases a broader range of botanical flavors.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Empress 1908 -->
+        <div id="empress" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                   <img src="Juniper Palace - World's Top 25 Gins_files/Empress1908.jpg" alt="Empress 1908 Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">6. Empress 1908</h2>
+                <p class="text-gray-600 mb-2">Indigo Gin | 42.5% ABV</p>
+                <p class="italic text-gray-500 mb-4">Victoria, British Columbia, Canada</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Empress 1908 offers a bold and distinct flavor profile. Taste-wise, the first impression is heat, then citrus, followed by juniper and spice. The grapefruit zest is tart and sharp, complemented by a forward earthiness from butterfly pea blossoms and the Fairmont Empress House Tea blend. The gin also features floral notes from rose and delicate cucumber undertones, creating a well-balanced spirit suitable for both traditional and innovative cocktails.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Empress Tea</span>
+                    <span class="botanicals-tag">Butterfly Pea Blossom</span>
+                    <span class="botanicals-tag">Grapefruit Peel</span>
+                    <span class="botanicals-tag">Coriander Seed</span>
+                    <span class="botanicals-tag">Rose</span>
+                    <span class="botanicals-tag">Ginger Root</span>
+                    <span class="botanicals-tag">Cinnamon Bark</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Distilled in copper pot stills in small batches by Victoria Distillers, Empress 1908 Gin combines traditional distillation methods with unique botanicals. The signature ingredient, butterfly pea blossom, is added after distillation to impart the gin's natural indigo color. This botanical not only gives the gin its distinctive hue but also creates a magical color-changing effect when mixed with citrus or tonic water, turning from deep blue to soft pink. The recipe was inspired by the tea served at the iconic Fairmont Empress Hotel in Victoria, British Columbia.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Roku -->
+        <div id="roku" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Roku.jpg" alt="Roku Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">7. Roku</h2>
+                <p class="text-gray-600 mb-2">Japanese Craft Gin | 43% ABV</p>
+                <p class="italic text-gray-500 mb-4">Osaka, Japan</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Roku Gin offers an ethereal top note of cherry blossom and green tea, with citron and pepper notes briefly emerging. The gin has complex aromas of yuzu and sakura flower that lead into a traditional gin foundation. On the palate, it presents an initial herbal and floral sweetness, followed by a wave of complex citrus, particularly yuzu. The finish is crisp with a peppery warmth from the sansho pepper and a lingering hint of tea.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Sakura Flower</span>
+                    <span class="botanicals-tag">Sakura Leaf</span>
+                    <span class="botanicals-tag">Yuzu Peel</span>
+                    <span class="botanicals-tag">Sencha Tea</span>
+                    <span class="botanicals-tag">Gyokuro Tea</span>
+                    <span class="botanicals-tag">Sansho Pepper</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Roku Gin is crafted by the House of Suntory, renowned for its meticulous approach to spirit-making. The name "Roku" means "six" in Japanese, referring to the six traditional Japanese botanicals that define this gin's character. Each of these botanicals is harvested in its proper season to ensure peak flavor and is distilled separately using four different pot still types, each selected to best extract the essence of the particular botanical. These distillates are then blended with eight traditional gin botanicals to create a harmoniously balanced gin that represents Japanese craftsmanship and attention to detail.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Bombay Sapphire -->
+        <div id="bombay" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/BombaySapphire.jpg" alt="Bombay Sapphire Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">8. Bombay Sapphire</h2>
+                <p class="text-gray-600 mb-2">London Dry Gin | 47% ABV</p>
+                <p class="italic text-gray-500 mb-4">Hampshire, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Bombay Sapphire presents a strong citrus nose with acidic lemon dominating, accompanied by juniper and a distinct floral fruitiness. The palate offers a clean, refreshing taste with balanced botanicals where no single flavor overpowers the others. Notes of juniper, lemon, coriander, and light spices create a versatile gin that works well in various cocktails and is particularly known for its smooth character.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (10 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Grains of Paradise</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Cubeb Berries</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Almonds</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                    <span class="botanicals-tag">Liquorice</span>
+                    <span class="botanicals-tag">Angelica</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Bombay Sapphire is distinguished by its unique vapor infusion distillation process, developed in 1761. Unlike most gins that boil botanicals directly in the spirit, Bombay Sapphire suspends its botanicals in perforated copper baskets above the spirit. As the vapor rises, it gently extracts the essential oils and flavor compounds from the botanicals, creating a more delicate and balanced flavor profile. This process takes place in the iconic Carter-Head stills at the brand's distillery in Laverstoke Mill, Hampshire. The copper stills, including the original 1831 "Still No. 1," are responsible for the gin's exceptionally smooth character.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Sipsmith -->
+        <div id="sipsmith" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Sipsmith.jpg" alt="Sipsmith Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">9. Sipsmith</h2>
+                <p class="text-gray-600 mb-2">London Dry Gin | 41.6% ABV</p>
+                <p class="italic text-gray-500 mb-4">London, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Sipsmith London Dry Gin unfolds in three waves on the palate: pine-forward juniper comes on early, with bright lemon curd and citrus mid-palate, followed by a long, complex finish with notes of orange marmalade, spice, and more juniper. The nose is floral with summer meadow notes, followed by mellow rounded juniper and zesty citrus freshness. This gin delivers the quintessential London Dry experience with exceptional smoothness and complexity.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander Seed</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Licorice Root</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Ground Almond</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                    <span class="botanicals-tag">Cinnamon</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Sipsmith was a pioneer in London's gin renaissance, becoming the first copper pot distillery to open in the city in nearly 200 years when it launched in 2009. The distillery employs a traditional one-shot method, where each batch is made by distilling the botanicals with the base spirit just once (rather than creating a concentrate to be diluted later). This process takes place in copper pot stills named Prudence, Patience, and Constance, with each batch being carefully monitored and hand-cut by the master distiller. The result is a gin of exceptional quality and consistency, handcrafted in small batches using traditional techniques and the finest ingredients.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Beefeater -->
+        <div id="beefeater" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">10. Beefeater</h2>
+                <p class="text-gray-600 mb-2">London Dry Gin | 47% ABV</p>
+                <p class="italic text-gray-500 mb-4">London, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Beefeater delivers a robust, pine-forward juniper flavor with hints of Seville orange, angelica, and a touch of licorice. The palate starts with a hint of lemon zest, then juniper builds. Mid-palate, it's nearly all about juniper, which later gives way to complexity and earthiness. The finish is clean, long, and warm with subtle citrus notes lingering. This classic London Dry Gin offers balanced, well-integrated flavors ideal for classic gin cocktails.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Angelica Seeds</span>
+                    <span class="botanicals-tag">Coriander Seeds</span>
+                    <span class="botanicals-tag">Licorice</span>
+                    <span class="botanicals-tag">Almonds</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Seville Oranges</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Beefeater maintains one of the most traditional gin production methods in the industry, following the same recipe created by founder James Burrough in the 1860s. The process begins with a 24-hour steeping of the botanicals in neutral grain spirit, allowing the essential oils to fully infuse before distillation. This extended maceration is a signature element of Beefeater's production. The gin is then distilled in traditional copper pot stills, with the master distiller carefully making the "cut" to ensure only the heart of the distillation is collected. Beefeater is the only historic London Dry Gin still actually made in London, produced at the Kennington distillery with its nine stills.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Citadelle -->
+        <div id="citadelle" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">11. Citadelle</h2>
+                <p class="text-gray-600 mb-2">French Gin | 44% ABV</p>
+                <p class="italic text-gray-500 mb-4">Cognac, France</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Citadelle Gin delivers a complex and harmonious flavor profile with vibrant citrus and floral notes balanced by warm spice. The initial taste offers fresh juniper and citrus, followed by a delicate interplay of spice, fruit, and floral elements. The finish reveals hints of vanilla, butter, sweet cream, cinnamon, and even a pleasant coconut note. The overall experience is rich yet balanced, with a clean, smooth texture that works beautifully in both classic and creative cocktails.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (19 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Licorice</span>
+                    <span class="botanicals-tag">Cubeb Berries</span>
+                    <span class="botanicals-tag">Cinnamon</span>
+                    <span class="botanicals-tag">Violets</span>
+                    <span class="botanicals-tag">Almonds</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Citadelle Gin is produced at Château de Bonbonnet in southwestern France by Maison Ferrand, a company known for its exceptional cognac. The gin is distilled using an innovative method inspired by 17th-century French gin-making traditions. The 19 botanicals are infused in the base spirit separately, each for a precise amount of time to extract optimal flavor, before being combined and distilled in small copper pot stills over an open flame. Uniquely, Citadelle employs a progressive infusion method where each botanical is added at different times during the process. In their Citadelle Reserve expression, the gin is even aged in oak barrels previously used for cognac, adding another layer of complexity.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Drumshanbo -->
+        <div id="drumshanbo" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">12. Drumshanbo Gunpowder</h2>
+                <p class="text-gray-600 mb-2">Irish Gin | 43% ABV</p>
+                <p class="italic text-gray-500 mb-4">Drumshanbo, Ireland</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Drumshanbo Gunpowder Irish Gin offers a bold yet balanced flavor profile. It presents with a medium mouthfeel and well-behaved heat, rich with juniper, vanilla, floral citrus and sage character. The nose is bold with pepper and spice, juniper lending a green character studded with notes of dusky earth. The taste develops with hints of tea, fresh citrus, and oriental spices creating a complex yet harmonious experience. The finish is clean and long-lasting, leaving a pleasant warmth and botanical complexity.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Gunpowder Tea</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Caraway Seed</span>
+                    <span class="botanicals-tag">Star Anise</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Meadowsweet</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Chinese Lemon</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Drumshanbo Gunpowder Irish Gin is crafted at The Shed Distillery in rural Ireland, the first distillery in Connacht province in over 100 years when it opened in 2014. The distillation process combines traditional copper pot still methods with modern innovation. The first six botanicals — angelica root, orris root, meadowsweet, caraway seed, star anise, and juniper berries — are added to the still with the pure Irish grain spirit. This mixture is allowed to steep for 24 hours before distillation. Then, while the spirit vapors rise through the neck of the still, they pass through a special botanical basket containing Chinese gunpowder tea, Oriental grapefruit, and Oriental lemons, allowing these more delicate ingredients to impart their flavors without being destroyed by the heat of direct distillation.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Gin Mare -->
+        <div id="ginmare" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">13. Gin Mare</h2>
+                <p class="text-gray-600 mb-2">Mediterranean Gin | 42.7% ABV</p>
+                <p class="italic text-gray-500 mb-4">Vilanova, Spain</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Gin Mare delivers a distinctly Mediterranean flavor profile unlike any other gin. The herbal notes fight for dominance in the initial taste with juniper, but ultimately the gin presents a beautiful balance of savory, herbal, and citrus elements. On the nose, experience fresh herbal notes of rosemary and basil, intertwined with the citrusy zest of Arbequina olives and the subtle sweetness of thyme. The palate is complex with rosemary, thyme, and basil readily noticeable alongside traditional gin flavors. What makes Gin Mare exceptional is its smoothness and the sophisticated way it incorporates these unique botanicals while maintaining the essential character of gin.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Arbequina Olives</span>
+                    <span class="botanicals-tag">Basil</span>
+                    <span class="botanicals-tag">Rosemary</span>
+                    <span class="botanicals-tag">Thyme</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Citrus</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Gin Mare is produced in a 19th-century chapel converted into a distillery located in Vilanova i la Geltrú, just outside Barcelona, Spain. The production process is unique and meticulous, with each botanical distilled separately to ensure optimal flavor extraction. The Arbequina olives, rosemary, thyme, and basil—the signature Mediterranean botanicals—are all locally sourced and carefully selected for their quality and aromatic properties. After individual distillation, these botanical spirits are blended together to create the final product. The distillery uses a specially designed Florentine still and an innovative maceration process that allows the delicate herbs to impart their flavors without overwhelming the gin's balanced character. This careful process results in a spirit that truly captures the essence of the Mediterranean.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Plymouth -->
+        <div id="plymouth" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">14. Plymouth</h2>
+                <p class="text-gray-600 mb-2">English Gin | 41.2% ABV</p>
+                <p class="italic text-gray-500 mb-4">Plymouth, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Plymouth Gin has a great depth of flavor with deep earthy notes and a wonderfully fresh juniper and lemony bite. The palate reveals a woody, nutty, parsnip flavor and rooty notes reminiscent of radish, carrot, beet, and soil. It's less dry than London Dry gins, with a distinctively smooth, creamy texture and a touch of sweetness. The juniper is present but more restrained, allowing citrus and spice elements to shine through. This softer profile creates a balanced, versatile gin that works exceptionally well in classic cocktails like the Martini and Gimlet.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (7 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander Seed</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Plymouth Gin is produced at the historic Black Friars Distillery, which has been in operation since 1793 and is the oldest working gin distillery in England. The production process begins with the seven botanicals being steeped in pure grain spirit and soft Dartmoor water for several hours before distillation. This mixture is then distilled in traditional copper pot stills using a single-shot method, where no additional neutral spirit is added after distillation. Plymouth Gin represents its own style of gin, distinct from London Dry, with geographic protection that requires it to be produced within the city of Plymouth. This traditional method results in a smoother, earthier gin that has been favored by the Royal Navy for over two centuries.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Nolet's Silver -->
+        <div id="nolets" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">15. Nolet's Silver</h2>
+                <p class="text-gray-600 mb-2">Dutch Gin | 47.6% ABV</p>
+                <p class="italic text-gray-500 mb-4">Schiedam, Netherlands</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Nolet's Silver Gin presents a unique, floral and fruit-forward profile that departs from traditional gin expressions. The palate offers fresh notes of Turkish rose, peach, and raspberry, creating a distinctively fruity yet balanced experience. Juniper remains present but takes a supporting role to these fruitier botanical notes. The flavor unfolds with juniper hitting first, along with apple, pear, various stone fruits, a hint of peach, and honey dew. Cardamom emerges on the back palate with a lovely confluence of fruit. The finish is smooth with a gentle sweetness and lingering floral complexity.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Turkish Rose</span>
+                    <span class="botanicals-tag">White Peach</span>
+                    <span class="botanicals-tag">Raspberry</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Licorice</span>
+                    <span class="botanicals-tag">Lavender</span>
+                    <span class="botanicals-tag">Citrus</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Nolet's Silver Gin is produced at the Nolet Distillery in Schiedam, Netherlands, a family operation with over 330 years of distilling heritage. The Nolet family, who also created Ketel One Vodka, brings generations of expertise to their gin production. What sets Nolet's apart is their innovative approach to botanical selection and their meticulous distillation process. Each botanical is individually macerated and then distilled in ultra-modern copper pot stills, allowing for precise control over flavor extraction. The signature botanicals—Turkish rose, raspberry, and white peach—are rarely found in traditional gins and reflect the 11th generation distiller Carolus Nolet Sr.'s vision to create a gin for modern palates while respecting gin's heritage. These individually distilled botanicals are then carefully blended to create the final product.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Ki No Bi -->
+        <div id="kinobi" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">16. Ki No Bi</h2>
+                <p class="text-gray-600 mb-2">Kyoto Dry Gin | 45.7% ABV</p>
+                <p class="italic text-gray-500 mb-4">Kyoto, Japan</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Ki No Bi offers a fresh aroma of yuzu and a thread of sanshō that lingers like a morning mist in a bamboo forest. The palate presents abundant citrus at first taste, with yuzu and other citrus notes dominating. The juniper complements and showcases the Japanese botanicals rather than dominating them. Crisp and bitter citrus elements blend artfully before hitting some earthy, spicy notes with a mentholated finish. Green tea and bamboo provide subtle depth, while the finish offers a pleasant warming spice. The overall experience is clean, precise, and distinctly Japanese while still honoring the gin tradition.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Yellow Yuzu</span>
+                    <span class="botanicals-tag">Hinoki Wood (Japanese Cypress)</span>
+                    <span class="botanicals-tag">Bamboo</span>
+                    <span class="botanicals-tag">Gyokuro Tea</span>
+                    <span class="botanicals-tag">Green Sanshō (Japanese Peppercorn)</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Angelica</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Ki No Bi ("The Beauty of the Seasons") is produced at The Kyoto Distillery, Japan's first dedicated artisanal gin distillery. Their production process is both innovative and meticulous. They begin with a base spirit distilled from rice and Fushimi water, prized for its softness. The botanicals are divided into six distinct categories based on their flavor characteristics: Base, Citrus, Tea, Herbal, Spice, and Floral & Fruity. Each category is distilled separately in a copper pot still to extract the optimal flavors before being precisely blended together to create the final gin. This unique "multiple distillation" approach allows the distillers to control exactly how each botanical contributes to the final product, ensuring perfect balance and harmony—concepts deeply important in Japanese culture. The result is a gin that expresses the Japanese terroir while maintaining the essential character of traditional gin.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Scapegrace -->
+        <div id="scapegrace" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">17. Scapegrace</h2>
+                <p class="text-gray-600 mb-2">New Zealand Dry Gin | 42.2% ABV</p>
+                <p class="italic text-gray-500 mb-4">Southern Alps, New Zealand</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Scapegrace Classic Dry Gin initially presents orange, lemon, and a mild pepperiness on the palate. Juniper with pine and green facets holds court mid-palate, while the combination of spices creates a warming sensation towards the finish. The finish is warm and slightly rooty, with juniper and mild spice hovering over a clean and dry conclusion. The gin maintains remarkable balance throughout the tasting experience, with clear citrus, juniper, and spice notes that make it both distinctive and versatile for cocktails. Their Black variant offers a more experimental profile featuring unusual botanicals like aronia berry and sweet potato.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (12 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Nutmeg</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Cinnamon Bark</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Cloves</span>
+                    <span class="botanicals-tag">Licorice Root</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Scapegrace Gin is crafted in New Zealand using water sourced from the country's Southern Alps, known for its exceptional purity. The distillation takes place in a 19th-century John Dore copper pot still, which provides a connection to gin's traditional production methods. The 12 botanicals are steeped for 24 hours in the neutral grain spirit before distillation, allowing for thorough flavor extraction. The gin is produced in small batches with careful attention to every detail of the process. For their Black Gin variant, Scapegrace employs an innovative approach where unusual botanicals like aronia berry, saffron, pineapple, butterfly pea, and sweet potato are blended in precise amounts at specific temperatures in a defined sequence to create its unique flavor profile and naturally changing color. This combination of traditional methods and innovative approaches has earned Scapegrace international recognition and awards.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Junipero -->
+        <div id="junipero" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">18. Junipero</h2>
+                <p class="text-gray-600 mb-2">American Craft Gin | 49.3% ABV</p>
+                <p class="italic text-gray-500 mb-4">San Francisco, California, USA</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Junipero offers a bold, juniper-forward flavor profile with remarkable intensity and complexity. On the nose, you'll find aromas of pine needles and sap, singed citrus peels, a hint of turpentine, and honey horseradish mustard. The palate delivers a strong juniper presence accompanied by bright citrus notes, particularly grapefruit, and a dry, faintly spicy finish. The high proof (98.6) provides a warming character without overpowering the botanical nuances. This gin presents classic gin characteristics with amplified intensity, making it ideal for cocktails where gin needs to stand up to other strong flavors.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Angelica</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Cubeb Berries</span>
+                    <span class="botanicals-tag">Grains of Paradise</span>
+                    <span class="botanicals-tag">Lemon</span>
+                    <span class="botanicals-tag">Orange</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Aniseed</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Junipero, launched in 1996, was a pioneer of the American craft gin movement, predating the current gin renaissance by over a decade. Produced by Hotaling & Co. (formerly Anchor Distilling), it's crafted in small batches using traditional distillation methods combined with a bold American approach. Each batch is distilled in a copper pot still, with carefully selected botanicals sourced from around the world. What sets Junipero apart is its unfiltered bottling at a robust 98.6 proof, preserving the full intensity of flavors and allowing the essential oils from the botanicals to create a slight louche (cloudiness) when the gin is chilled. This traditional approach, combined with a focus on juniper and citrus, creates a gin that respects gin's heritage while embodying the innovative spirit of American craft distilling.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Ford's -->
+        <div id="fords" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">19. Ford's</h2>
+                <p class="text-gray-600 mb-2">London Dry Gin | 45% ABV</p>
+                <p class="italic text-gray-500 mb-4">London, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Ford's Gin delivers a balanced, versatile flavor profile designed specifically with cocktails in mind. On the nose, you'll find juniper and bright spice with some floral hints, along with mild, fresh notes of lavender and cream. The palate offers a traditional gin backbone with juniper at the forefront, complemented by citrus brightness from lemon, orange, and grapefruit peels. Mid-palate reveals more complexity with subtle floral elements from jasmine and a spice foundation from angelica, orris, and cassia. The finish is clean and lengthy with balanced warmth, making this an exceptionally versatile gin for classic and contemporary cocktails alike.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (9 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander Seed</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                    <span class="botanicals-tag">Grapefruit Peel</span>
+                    <span class="botanicals-tag">Jasmine Flowers</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Ford's Gin is a collaboration between 11th generation Master Distiller Charles Maxwell of Thames Distillers and Simon Ford, a gin expert with extensive industry experience. What makes Ford's unique is that it was designed specifically with bartenders in mind, focusing on how the gin would perform in cocktails. The production process begins with the nine botanicals being steeped for 15 hours in neutral grain spirit and water. This long maceration allows the flavor compounds to fully extract before distillation in traditional copper pot stills. The botanicals are sourced from trusted suppliers around the world, with particular attention to quality and consistency. The gin is distilled using a traditional one-shot method, meaning no additional neutral spirit is added after distillation, ensuring a rich, full-bodied flavor profile perfect for classic gin cocktails.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- St. George Terroir -->
+        <div id="stgeorge" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">20. St. George Terroir</h2>
+                <p class="text-gray-600 mb-2">California Gin | 45% ABV</p>
+                <p class="italic text-gray-500 mb-4">Alameda, California, USA</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    St. George Terroir is a gin with an intensely aromatic, distinctly Californian character. The flavor is driven by woody forest tones and gritty earthiness, with the fir and bay laurel flavors at the forefront, underscored by notes of sage and hints of citrus. On the palate, sage and bay leaves appear early, with the sage meshing with resiny juniper and fir needles, becoming slightly more minty and cool as the taste progresses. The result is a gin that captures the essence of the California wilderness—an olfactory snapshot of the Golden State's coastal mountains. This is a bold, evocative gin that transports you to a forest trail with every sip.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Douglas Fir</span>
+                    <span class="botanicals-tag">California Bay Laurel</span>
+                    <span class="botanicals-tag">Coastal Sage</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Angelica Root</span>
+                    <span class="botanicals-tag">Roasted Coriander Seeds</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                    <span class="botanicals-tag">Citrus Peels</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    St. George Terroir Gin is produced by St. George Spirits, one of America's pioneering craft distilleries established in 1982. To capture the essence of the California landscape, they employ multiple distillation techniques for different botanicals. Douglas fir and California bay laurel are individually distilled through a process called "vapor infusion," where the botanicals are suspended in a basket above the neutral spirit during distillation, allowing the vapors to extract their essential oils. Coastal sage and other botanicals are distilled directly in the pot still. This combination of techniques allows the distillers to precisely control how each botanical contributes to the final flavor profile. The distillery uses a 1,500-liter copper pot still named "Stella" for these botanical distillations. What truly sets Terroir apart is the use of real California botanicals rather than extracts or artificial flavoring, creating an authentic expression of the California wilderness.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Martin Miller's -->
+        <div id="martin" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">21. Martin Miller's</h2>
+                <p class="text-gray-600 mb-2">English Gin | 40% ABV</p>
+                <p class="italic text-gray-500 mb-4">England & Iceland</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Martin Miller's Gin offers a remarkably clean, smooth flavor profile with exceptional balance between citrus freshness and juniper. The palate presents a citrus-forward character with bright notes of lemon and orange, followed by a well-balanced juniper presence that isn't overwhelming. The finish is clean and soft with subtle spice notes and a distinctive creamy smoothness that sets it apart from other gins. This gentle yet complex profile makes it exceptionally versatile, working well in both classic cocktails and contemporary creations.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Angelica</span>
+                    <span class="botanicals-tag">Licorice Root</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                    <span class="botanicals-tag">Florentine Iris</span>
+                    <span class="botanicals-tag">Cucumber</span>
+                    <span class="botanicals-tag">Citrus Peels</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Martin Miller's Gin employs a unique "dual distillation" process that separates the botanicals into two groups before distillation. The earthy botanicals (juniper, coriander, angelica, etc.) are distilled separately from the citrus elements (lemon and orange peels). This allows for optimal extraction of the essential oils from each type of botanical. These two distillates are then blended together to create a perfectly balanced spirit. What truly sets Martin Miller's apart, however, is its journey after distillation. The gin is distilled in England in a traditional copper pot still, then transported over 3,000 miles to Iceland, where it's blended with some of the purest water on Earth, drawn from Icelandic springs formed from glacial meltwater that's been filtered through lava rock for centuries. This exceptionally pure, soft water contributes to the gin's remarkable smoothness and helps integrate the botanical flavors.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Nikka Coffey -->
+        <div id="nikka" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">22. Nikka Coffey</h2>
+                <p class="text-gray-600 mb-2">Japanese Gin | 47% ABV</p>
+                <p class="italic text-gray-500 mb-4">Miyagikyo & Yoichi, Japan</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Nikka Coffey Gin offers a complex and distinctive flavor profile that showcases Japanese botanicals while respecting the gin tradition. The palate presents an initial burst of citrus from yuzu, kabosu, and amanatsu, followed by a subtle woody note and pleasant juniper presence. The sansho pepper provides a gentle tingling spice that complements the traditional gin backbone. The finish is long and aromatic with lingering hints of citrus peel, apple, and a subtle touch of spice. This gin balances tradition and innovation, with the unique characteristics of Japanese citrus fruits creating a bright, fresh character that sets it apart from Western gins.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Yuzu</span>
+                    <span class="botanicals-tag">Kabosu</span>
+                    <span class="botanicals-tag">Amanatsu</span>
+                    <span class="botanicals-tag">Sansho Pepper</span>
+                    <span class="botanicals-tag">Apple</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Angelica</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Lemon Peel</span>
+                    <span class="botanicals-tag">Orange Peel</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Nikka Coffey Gin is produced by Nikka Whisky, one of Japan's most respected whisky distillers with a history dating back to 1934. The gin's name comes from the "Coffey still" used in its production—a traditional continuous still invented by Aeneas Coffey in 1830, which Nikka uses for their grain whiskies as well. This unique production method begins with a base distillate made from corn and barley in the Coffey stills. The botanicals are then divided into groups according to their characteristics and distilled separately to extract optimal flavors—a process similar to Nikka's approach to blending whisky. The Japanese botanicals, including four different Japanese citrus fruits and sansho pepper, give this gin its distinctive character. After distillation, these different botanical distillates are precisely blended to create a harmonious final product that reflects both Japanese craftsmanship and the distillery's whisky-making heritage.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Four Pillars -->
+        <div id="fourpillars" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">23. Four Pillars</h2>
+                <p class="text-gray-600 mb-2">Australian Gin | 41.8% ABV</p>
+                <p class="italic text-gray-500 mb-4">Yarra Valley, Australia</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Four Pillars Rare Dry Gin presents a distinctly Australian take on the classic gin profile. The taste begins with a strong foundation of juniper complemented by fresh whole oranges, which provide a clean citrus note throughout the gin. The native Australian botanicals, particularly lemon myrtle and Tasmanian pepperberry, add a unique layer with the pepperberry bringing warmth and spice rather than heat. The palate is perfectly balanced with a focus on the middle "sweet" palate, making it both full-flavored and smooth. The finish is clean with lingering pepper and spice notes. Overall, it offers a perfect balance between classic gin characteristics and contemporary Australian flavors.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals:</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Whole Oranges</span>
+                    <span class="botanicals-tag">Lemon Myrtle</span>
+                    <span class="botanicals-tag">Tasmanian Pepperberry</span>
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Coriander Seed</span>
+                    <span class="botanicals-tag">Cardamom</span>
+                    <span class="botanicals-tag">Star Anise</span>
+                    <span class="botanicals-tag">Cinnamon</span>
+                    <span class="botanicals-tag">Lavender</span>
+                    <span class="botanicals-tag">Angelica</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Four Pillars Gin is crafted in the Yarra Valley, Australia, using a CARL copper pot still named "Wilma." The distillation process incorporates several innovative techniques that set it apart. Most notably, they use whole fresh oranges in the botanical basket of the still, rather than just the peels, adding a distinctive fresh citrus character. The distillery also employs a post-distillation basket for some botanicals to create a vapor infusion, capturing the more delicate aromas. Water for proofing the gin comes from the Yarra Valley, naturally filtered through the region's mineral-rich soils. Four Pillars also places a strong emphasis on sustainability, using spent botanicals in their "Gin Pig" program (feeding pigs that become prosciutto) and recycling other waste products. The distillers taste every batch before release to ensure consistent quality while embracing the subtle seasonal variations in their botanical ingredients.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Silent Pool -->
+        <div id="silentpool" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">24. Silent Pool</h2>
+                <p class="text-gray-600 mb-2">English Gin | 43% ABV</p>
+                <p class="italic text-gray-500 mb-4">Surrey Hills, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Silent Pool Gin offers a clean, full-bodied, and fresh flavor profile with depth, clarity, and subtle floral notes. The taste begins with fresh floral and clarifying citrus notes, balanced with creamy vanilla sweetness. As it develops, the juniper becomes more pronounced alongside warm honey, finishing with a refreshingly subtle pepper spice delivered by the grains of paradise. The layered complexity comes from the careful balance of 24 botanicals working in harmony, creating a gin that's both classic and distinctively modern with sophisticated depth and subtle sweetness.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (24 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Chamomile</span>
+                    <span class="botanicals-tag">Lavender</span>
+                    <span class="botanicals-tag">Linden</span>
+                    <span class="botanicals-tag">Elderflower</span>
+                    <span class="botanicals-tag">Bergamot</span>
+                    <span class="botanicals-tag">Orange</span>
+                    <span class="botanicals-tag">Kaffir Lime</span>
+                    <span class="botanicals-tag">Honey</span>
+                    <span class="botanicals-tag">Pear</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Silent Pool Gin is produced at the Silent Pool Distillery located on the Duke of Northumberland's Albury Estate in the Surrey Hills. The distillation process combines traditional methods with innovative techniques. At the heart of their process is a unique four-stage method: the base botanicals are steeped in the neutral grain spirit overnight to extract their flavors; more delicate botanicals are placed in a copper basket for vapor infusion; a multi-chambered fractioning column is used during distillation for greater control over the process; and finally, a small amount of honey is added at the end to smooth and round the flavors. The distillery draws water from the Silent Pool itself, a natural spring-fed lake with crystal-clear water filtered through the chalk of the North Downs. The gin is produced in a custom-built, 350-liter Holstein still, which allows for precise temperature control during the distillation process. This meticulous approach results in a remarkably smooth and balanced gin.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Oxley -->
+        <div id="oxley" class="gin-card">
+            <div class="w-1/3 p-6 flex items-center justify-center bg-gray-50">
+                <div class="gin-image flex items-center justify-center">
+                    <img src="Juniper Palace - World's Top 25 Gins_files/Beefeater.jpg" alt="Beefeater Gin" class="gin-image">
+                </div>
+            </div>
+            <div class="w-2/3 p-6">
+                <h2 class="text-3xl font-bold mb-1 section-title">25. Oxley</h2>
+                <p class="text-gray-600 mb-2">Cold Distilled Gin | 47% ABV</p>
+                <p class="italic text-gray-500 mb-4">London, England</p>
+
+                <h3 class="text-xl font-semibold mb-3">Flavor Profile</h3>
+                <p class="mb-4">
+                    Oxley Gin offers an exceptionally fresh, clean, and bright flavor profile with remarkable clarity of botanical expression. The taste presents fresh citrus, particularly grapefruit, alongside crisp juniper notes. There's a pronounced vanilla sweetness mid-palate that balances perfectly with the juniper and citrus elements. The finish is clean and precise with lingering notes of herbs and citrus peel. What distinguishes Oxley is the exceptional brightness and freshness of the botanical flavors, preserved through its unique cold distillation process. Each botanical note is distinct and clear, creating a harmonious yet complex gin that excels in simple serves that showcase its refined character.
+                </p>
+
+                <h3 class="text-xl font-semibold mb-3">Key Botanicals (14 in total):</h3>
+                <div class="mb-4">
+                    <span class="botanicals-tag">Juniper</span>
+                    <span class="botanicals-tag">Grapefruit</span>
+                    <span class="botanicals-tag">Lemon</span>
+                    <span class="botanicals-tag">Meadowsweet</span>
+                    <span class="botanicals-tag">Vanilla</span>
+                    <span class="botanicals-tag">Anise</span>
+                    <span class="botanicals-tag">Licorice Root</span>
+                    <span class="botanicals-tag">Cassia Bark</span>
+                    <span class="botanicals-tag">Coriander</span>
+                    <span class="botanicals-tag">Orris Root</span>
+                </div>
+
+                <h3 class="text-xl font-semibold mb-3">Distillation Process</h3>
+                <p class="mb-6">
+                    Oxley employs a revolutionary "cold distillation" technique that sets it apart from all other gins. While traditional gin distillation uses heat to extract botanical flavors, Oxley's process occurs at -5°C (23°F) using a vacuum distillation system. This groundbreaking process took eight years and 38 prototypes to perfect. The botanicals are placed in the still with neutral grain spirit, and the pressure is reduced to create a vacuum. Under these conditions, the spirit evaporates at much lower temperatures, preserving the fresh, raw character of the botanicals without "cooking" them. Each batch is limited to only 240 bottles due to the time-consuming nature of this process. The resulting gin captures the pure essence of the botanicals in their most natural state, creating a remarkably fresh and vibrant flavor profile that cannot be achieved through traditional distillation methods.
+                </p>
+
+                <a href="#" class="buy-now-btn">
+                    <i class="fas fa-shopping-cart mr-2"></i>Buy Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="container mx-auto my-16 px-4">
+        <div class="bg-white rounded-lg shadow-md p-10 text-center">
+            <h2 class="text-3xl font-bold mb-6">Join Our Gin Enthusiast Community</h2>
+            <p class="text-lg mb-8">Subscribe to receive exclusive gin-related content, new product alerts, cocktail recipes, and special offers.</p>
+            <div class="max-w-md mx-auto">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500">
+                    <button class="bg-green-700 hover:bg-green-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-sm text-gray-500 mt-4">We respect your privacy and will never share your information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Juniper Palace</h3>
+                    <p class="text-gray-400">Your trusted guide to the world of premium gins.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Gin Guide</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Cocktail Recipes</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Contact</h4>
+                        <ul class="space-y-2">
+                            <li><a href="mailto:info@juniperpalace.com" class="text-gray-400 hover:text-white">info@juniperpalace.com</a></li>
+                            <li><span class="text-gray-400">Follow us on social media</span></li>
+                            <li class="flex space-x-4">
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Juniper Palace. All rights reserved.</p>
+                <p class="mt-2 text-sm">This website contains affiliate links. When you purchase through these links, we may earn a commission.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
